@@ -22,7 +22,7 @@ echo "Creating the source package for herdr-core ${herdr_core_VERSION}-${BUILD_V
 # archive download is byte-identical next time. Reuse the earlier release's copy.
 if [ ! -f "$ORIG_TARBALL" ]; then
     for ((b = BUILD_VERSION - 1; b >= 1; b--)); do
-        if wget -q "https://github.com/dariogriffo/herdr-core-debian/releases/download/${herdr_core_VERSION}%2B${b}/${ORIG_TARBALL}" -O "$ORIG_TARBALL"; then
+        if wget -q "https://github.com/gaofengnan/herdr-core-debian/releases/download/${herdr_core_VERSION}%2B${b}/${ORIG_TARBALL}" -O "$ORIG_TARBALL"; then
             echo "  Reusing $ORIG_TARBALL from release ${herdr_core_VERSION}+${b}"
             break
         fi
@@ -40,7 +40,7 @@ else
 fi
 
 build_source_package() {
-    local FULL_VERSION="${herdr_core_VERSION}-${BUILD_VERSION}~griffo"
+    local FULL_VERSION="${herdr_core_VERSION}-${BUILD_VERSION}~gaofn"
 
     echo "  Building source package ${FULL_VERSION}..."
 
@@ -57,7 +57,7 @@ herdr-core (${FULL_VERSION}) stable; urgency=medium
 
   * New upstream release ${herdr_core_VERSION}.
 
- -- Dario Griffo <dariogriffo@gmail.com>  $(date -R)
+ -- Fengnan Gao <gao.fengnan@gmail.com>  $(date -R)
 EOF2
 
     # Build source package (.dsc + .debian.tar.xz); reuses existing .orig.tar.gz

@@ -2,6 +2,8 @@
 
 # herdr-core
 
+> Fork of [dariogriffo/herdr-core-debian](https://github.com/dariogriffo/herdr-core-debian) (MIT); the original packaging is by Dario Griffo. Served at [deb.gaofn.xyz](https://deb.gaofn.xyz) for Debian 12 (bookworm) and 13 (trixie).
+
 **Terminals for coding agents that stay alive.**
 
 ![GitHub License](https://img.shields.io/github/license/herdrdev/herdr-core)

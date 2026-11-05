@@ -1,9 +1,9 @@
 Section: devel
 Priority: optional
-Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Maintainer: Fengnan Gao <gao.fengnan@gmail.com>
 Homepage: https://herdr.dev
 Package: herdr-core
-Version: herdr_core_VERSION-BUILD_VERSION~griffo
+Version: herdr_core_VERSION-BUILD_VERSION~gaofn
 Architecture: SUPPORTED_ARCHITECTURES
 Depends: openssh-client
 Recommends: systemd
